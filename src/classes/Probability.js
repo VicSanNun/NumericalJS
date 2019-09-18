@@ -17,6 +17,13 @@ class Probability {
         for(let i = 0; i < n; i++) {
             sum += (data[i] - average);
         }
+    } 
+
+    static Poisson(average, event) {
+    
     }
 
+    static Normal(a, b) {
+    
+    }
 }
