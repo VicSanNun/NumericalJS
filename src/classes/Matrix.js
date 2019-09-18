@@ -1,12 +1,31 @@
 class Matrix {
-    constructor(rows, columns) {
-        this._rows = rows;
-        this._columns = columns;
+    static show(matrix) {
+        console.table(matrix);
+    }   
+
+    static transpose(matrix) {
+        
     }
 
-    static Populate() {
+    static determinant(matrix) {
+    
+    }
 
-    }   
+    static eigenvalues(matrix) {
+    
+    }
+
+    static eigenvectors(matrix) {
+    
+    }
+
+    static sum(matrixA, matrixB) {
+    
+    }
+
+    static multiply(matrixA, matrixB) {
+    
+    }
 }
 
 module.exports = Matrix;
