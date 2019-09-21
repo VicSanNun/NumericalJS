@@ -3,13 +3,13 @@ class Statistics {
         let sum = 0;
         let result = data.reduce((sum, item) => {
             return sum+=item;
-        })
+        });
         return (result/data.length);
     }
 
     static Variance(data, average) {
         if(average == null) {
-            average = Average(data);
+            average = this.Average(data);
         }
         const n = data.length;
         let sum = 0;

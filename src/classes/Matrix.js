@@ -1,8 +1,4 @@
 class Matrix {
-    static show(matrix) {
-        console.table(matrix);
-    }   
-
     static transpose(matrix) {
         
     }
