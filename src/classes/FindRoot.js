@@ -1,7 +1,7 @@
 class FindRoot {
 	
 	static Bhaskara(a, b, c) {
-		const delta = ((b*b)-(4*a*c));
+		const delta = (Math.pow(b, 2)-(4*a*c));
 		
         if (delta < 0) { 
             return ("Don't exists real roots");
