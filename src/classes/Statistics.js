@@ -1,20 +1,16 @@
 class Statistics {
-  static Average(data) {
-        let sum = 0;
-        let result = data.reduce((sum, item) => {
-            return sum+=item;
-        });
+    static Average(data) {
+        let result = data.reduce((sum, item) => sum+=item);
         return (result/data.length);
     }
 
-    static Variance(data, average) {
+    static Variance(data, average = null) {
         if(average == null) {
             average = this.Average(data);
         }
-        const n = data.length;
-        let sum = 0;
-        for(let i = 0; i < n; i++) {
-            sum += (data[i] - average);
-        }
+
+        return data.reduce((sum, item) => sum+=(item - average));
     } 
 }
+
+module.exports = Statistics;
