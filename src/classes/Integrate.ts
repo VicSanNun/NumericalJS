@@ -1,10 +1,10 @@
 class Integrate {
     
-    static Trapezio(fn, a, b) {
+    static Trapezio(fn: Function, a: number, b: number): number {
         return ((b - a)*(fn(b)+fn(a))/(2));
     }
 
-    static Simpson(fn, a, b) {
+    static Simpson(fn: Function, a: number, b: number): number {
         const x0 = a;
         const x1 = (a + b)/2;
         const x2 = b;

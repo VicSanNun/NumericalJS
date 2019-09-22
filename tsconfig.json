@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "es6",
+        "outDir": "./src/jsfiles"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

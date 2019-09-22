@@ -1,5 +1,5 @@
 class Derivative {
-    static Diff(fn, x, step) {
+    static Diff(fn: Function, x:number, step:number):number {
         return((fn(x+step) - fn(x))/step);
     }
 }
