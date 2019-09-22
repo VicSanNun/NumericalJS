@@ -14,7 +14,7 @@ describe('Statistics Tests', () => {
     it('Variance', () => {
         const result = Statistics.Variance(data);
 
-        console.log(result)
+        assert.deepEqual(result, 2.5);
     });
     
 });

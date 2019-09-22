@@ -1,6 +1,6 @@
 class Statistics {
     static Average(data) {
-        let result = data.reduce((sum, item) => sum+=item);
+        const result = data.reduce((sum, item) => sum+=item);
         return (result/data.length);
     }
 
@@ -9,7 +9,9 @@ class Statistics {
             average = this.Average(data);
         }
 
-        return data.reduce((sum, item) => sum+=(item - average));
+        const sum = data.reduce((sum, item) => sum+=Math.pow((item - average), 2));
+        
+        return (sum/(data.length - 1));
     } 
 }
 
